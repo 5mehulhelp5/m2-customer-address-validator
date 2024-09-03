@@ -39,42 +39,55 @@ class InputsValidator extends AbstractValidator
         if (!$this->validator->validate($address->getFirstname())) {
             $messages[] = __('First name is not valid.');
         }
+
         if (!$this->validator->validate($address->getMiddlename())) {
             $messages[] = __('Middle name is not valid.');
         }
+
         if (!$this->validator->validate($address->getLastname())) {
             $messages[] = __('Last name is not valid.');
         }
+
         if (!$this->validator->validate($address->getPrefix())) {
             $messages[] = __('Prefix is not valid.');
         }
+
         if (!$this->validator->validate($address->getSuffix())) {
             $messages[] = __('Suffix is not valid.');
         }
+
         if (!$this->validator->validate($address->getTelephone())) {
             $messages[] = __('Telephone is not valid.');
         }
+
         if (!$this->validator->validate($address->getVatId())) {
             $messages[] = __('VAT ID is not valid.');
         }
+
         if (!$this->validator->validate($address->getPostcode())) {
             $messages[] = __('Postcode is not valid.');
         }
+
         if (!$this->validator->validate($address->getFax())) {
             $messages[] = __('Fax is not valid.');
         }
+
         if (!$this->validator->validate($address->getCompany())) {
             $messages[] = __('Company is not valid.');
         }
+
         if (!$this->validator->validate($address->getCity())) {
             $messages[] = __('City is not valid.');
         }
+
         if (!$this->validator->validate($address->getCity())) {
             $messages[] = __('City is not valid.');
         }
+
         if (!$this->validateRegion($address)) {
             $messages[] = __('Region is not valid.');
         }
+
         if (!$this->validateStreet($address)) {
             $messages[] = __('Street is not valid.');
         }
