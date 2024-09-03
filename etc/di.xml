@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Created by Qoliber
+ *
+ * @author      Lukasz Owczarczuk <lowczarczuk@qoliber.com>
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\CustomerGraphQl\Model\Customer\Address\ValidateAddress">
+        <plugin
+                name="Qoliber_CustomerAddressValidator::CustomerGraphQl_ValidateInputs"
+                type="Qoliber\CustomerAddressValidator\Plugin\CustomerGraphQl\ValidateInputs"
+        />
+    </type>
+    <type name="Magento\Quote\Model\QuoteAddressValidator">
+        <plugin
+                name="Qoliber_CustomerAddressValidator::Quote_ValidateInputs"
+                type="Qoliber\CustomerAddressValidator\Plugin\Quote\ValidateInputs"
+        />
+    </type>
+</config>

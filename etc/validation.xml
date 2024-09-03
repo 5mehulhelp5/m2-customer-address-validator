@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Created by Qoliber
+ *
+ * @author      Lukasz Owczarczuk <lowczarczuk@qoliber.com>
+ */
+ -->
+<validation xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+            xsi:noNamespaceSchemaLocation="urn:magento:framework:Validator/etc/validation.xsd">
+    <entity name="customer_address">
+        <rules>
+            <rule name="check_address_inputs">
+                <entity_constraints>
+                    <constraint alias="address_inputs_validator"
+                                class="Qoliber\CustomerAddressValidator\Model\Address\InputsValidator" />
+                </entity_constraints>
+            </rule>
+        </rules>
+        <groups>
+            <group name="save">
+                <uses>
+                    <use rule="check_address_inputs"/>
+                </uses>
+            </group>
+        </groups>
+    </entity>
+</validation>
