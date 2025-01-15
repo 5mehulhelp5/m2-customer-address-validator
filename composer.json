@@ -2,7 +2,7 @@
     "name": "qoliber/customer-address-validator",
     "description": "Magento 2 - Customer Address Validator",
     "homepage": "https://github.com/qoliber/m2-customer-address-validator",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "type": "magento2-module",
     "authors": [
         {
@@ -10,7 +10,7 @@
             "email": "info@qoliber.com"
         }
     ],
-    "license": "See LICENSE.md or https://store.qoliber.com/license/",
+    "license": "See LICENSE.md or https://qoliber.com/license/",
     "minimum-stability": "dev",
     "require": {
         "php": ">=8.1",
